@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get -y --no-install-recommends install build-essential ca-certificates curl git libpq-dev libssl-dev openssl pkg-config && \
     curl -Os https://static.rust-lang.org/rustup/dist/x86_64-unknown-linux-gnu/rustup-init && \
     chmod +x rustup-init && \
-    ./rustup-init -y --no-modify-path --default-toolchain nightly-2016-12-19 && \
+    ./rustup-init -y --no-modify-path --default-toolchain nightly-2017-01-25 && \
     rm rustup-init && \
     curl -LOs https://github.com/jedisct1/libsodium/releases/download/1.0.11/libsodium-1.0.11.tar.gz && \
     tar -zxvf libsodium-1.0.11.tar.gz && \
