@@ -11,6 +11,7 @@ RUN apt-get update && \
     curl -LOs https://github.com/jedisct1/libsodium/releases/download/1.0.11/libsodium-1.0.11.tar.gz && \
     tar -zxvf libsodium-1.0.11.tar.gz && \
     (cd libsodium-1.0.11 && ./configure && make && make check && make install) && \
+    ldconfig -v && \
     rm -rf libsodium-1.0.11 && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     mkdir /source
